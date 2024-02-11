@@ -17,9 +17,10 @@ object Dependencies {
     const val daggerHiltAndroidCompiler = "com.google.dagger:hilt-android-compiler:$daggerHiltVersion"
 
     // Hilt-Android DI
-    private const val androidXHiltVersion = "1.0.0"
+    private const val androidXHiltVersion = "1.1.0"
     const val androidXHiltCompiler = "androidx.hilt:hilt-compiler:$androidXHiltVersion"
     const val androidXHiltNavigation = "androidx.hilt:hilt-navigation-fragment:$androidXHiltVersion"
+    const val androidXHiltNavigationCompose = "androidx.hilt:hilt-navigation-compose:$androidXHiltVersion"
     const val androidXHiltWork = "androidx.hilt:hilt-work:$androidXHiltVersion"
 
     // Retrofit
@@ -32,6 +33,7 @@ object Dependencies {
     // Coroutines
     private const val coroutinesVersion = "1.6.4"
     const val coroutinesCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion"
+    const val coroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
 
     // Chucker
     const val chucker = "com.github.chuckerteam.chucker:library:3.5.2"
@@ -41,6 +43,17 @@ object Dependencies {
     private const val stethoVersion = "1.6.0"
     const val stetho = "com.facebook.stetho:stetho:$stethoVersion"
     const val stethoOkHttp = "com.facebook.stetho:stetho-okhttp3:$stethoVersion"
+
+    // Moshi
+    private const val moshiVersion = "1.14.0"
+    const val moshi = "com.squareup.moshi:moshi-kotlin:$moshiVersion"
+    const val moshiCodegen = "com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion"
+
+    // Splashscreen
+    val splashScreen by lazy { "androidx.core:core-splashscreen:1.0.1" }
+
+    // Coil
+    const val coil = "io.coil-kt:coil-compose:2.3.0"
 }
 
 object Modules {

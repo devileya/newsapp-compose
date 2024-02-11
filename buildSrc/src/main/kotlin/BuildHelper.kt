@@ -5,7 +5,7 @@ object BuildHelper {
 
     // Plugins
     const val agpVersion = "8.2.0"
-    const val kotlinVersion = "1.7.20"
+    const val kotlinVersion = "1.9.0"
     const val firebaseVersion = "2.9.9"
 
     const val androidGP = "com.android.application"

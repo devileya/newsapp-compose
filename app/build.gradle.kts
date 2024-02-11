@@ -32,11 +32,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = "17"
+        jvmTarget = "1.8"
     }
     buildFeatures {
         compose = true
@@ -70,21 +70,29 @@ dependencies {
 
     // Coroutines
     implementation(Dependencies.coroutinesCore)
+    implementation(Dependencies.coroutinesAndroid)
 
     //hilt DI
     implementation(Dependencies.daggerHiltAndroid)
     kapt(Dependencies.daggerHiltAndroidCompiler)
     kapt(Dependencies.androidXHiltCompiler)
     implementation(Dependencies.androidXHiltNavigation)
+    implementation(Dependencies.androidXHiltNavigationCompose)
     implementation(Dependencies.androidXHiltWork)
 
     // Chucker
     debugImplementation(Dependencies.chucker)
     releaseImplementation(Dependencies.chuckerNoOp)
 
-    // Stetho
-    implementation(Dependencies.stetho)
-    implementation(Dependencies.stethoOkHttp)
+    // Moshi
+    implementation(Dependencies.moshi)
+    kapt(Dependencies.moshiCodegen)
+
+    // SplashScreen
+    implementation(Dependencies.splashScreen)
+
+    // Coil
+    implementation(Dependencies.coil)
 
     implementation(project(Modules.utilities))
     testImplementation("junit:junit:4.13.2")
