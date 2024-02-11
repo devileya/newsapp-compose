@@ -78,6 +78,14 @@ dependencies {
     implementation(Dependencies.androidXHiltNavigation)
     implementation(Dependencies.androidXHiltWork)
 
+    // Chucker
+    debugImplementation(Dependencies.chucker)
+    releaseImplementation(Dependencies.chuckerNoOp)
+
+    // Stetho
+    implementation(Dependencies.stetho)
+    implementation(Dependencies.stethoOkHttp)
+
     implementation(project(Modules.utilities))
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

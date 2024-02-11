@@ -32,6 +32,15 @@ object Dependencies {
     // Coroutines
     private const val coroutinesVersion = "1.6.4"
     const val coroutinesCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion"
+
+    // Chucker
+    const val chucker = "com.github.chuckerteam.chucker:library:3.5.2"
+    const val chuckerNoOp = "com.github.chuckerteam.chucker:library-no-op:3.5.2"
+
+    // Stetho
+    private const val stethoVersion = "1.6.0"
+    const val stetho = "com.facebook.stetho:stetho:$stethoVersion"
+    const val stethoOkHttp = "com.facebook.stetho:stetho-okhttp3:$stethoVersion"
 }
 
 object Modules {
